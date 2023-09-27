@@ -12,8 +12,6 @@ plt.ylabel('Number of Pixels')
 plt.xlim([40, 110])
 plt.show()
 
-print('mean': np.mean(img),'median':np.median(img), 'std':np.std(img)) #計算img的統計性質
-
 from photutils.segmentation import detect_sources
 # 製作一個遮罩，source 的篩選條件為至少 5 個連續 pixel 且高於背景雜訊 3 倍
 # 此處使用 np.median(img) 來當作背景雜訊值，差距不會太大
